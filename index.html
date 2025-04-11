@@ -531,7 +531,7 @@
 	<script src="assets/js/main.js"></script>
 
 </body>
-<style>
+<!-- <style>
 	/* CSS para o dark mode */
 	.dark-mode {
 		background-color: #121212;
@@ -603,7 +603,95 @@
 	.email-color {
 		color: rgb(243, 90, 90);
 	}
+</style> -->
+
+<style>
+	/* CSS para o dark mode */
+	body.dark-mode,
+	body.dark-mode #wrapper,
+	body.dark-mode #main,
+	body.dark-mode .inner,
+	body.dark-mode #header,
+	body.dark-mode #banner,
+	body.dark-mode section,
+	body.dark-mode .content,
+	body.dark-mode .features article,
+	body.dark-mode .posts article {
+		background-color: #121212;
+		color: #f1f1f1;
+	}
+	body.dark-mode h1,
+	body.dark-mode h2,
+	body.dark-mode h3,
+	body.dark-mode h4,
+	body.dark-mode p,
+	body.dark-mode li,
+	body.dark-mode .logo,
+	body.dark-mode .icon {
+		color: #f1f1f1 !important;
+	}
+	body.dark-mode .button {
+		background-color: #333;
+		color: #f1f1f1;
+	}
+	body.dark-mode .button:hover {
+		background-color: #555;
+	}
+	
+	/* Estilo do botão de dark/light mode */
+	#theme-toggle {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		z-index: 9999;
+		background: #333;
+		color: white;
+		border: none;
+		padding: 10px 15px;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 14px;
+		transition: all 0.3s ease;
+	}
+	#theme-toggle:hover {
+		background: #555;
+	}
+	body.dark-mode #theme-toggle {
+		background: #f1f1f1;
+		color: #333;
+	}
+	body.dark-mode #theme-toggle:hover {
+		background: #ddd;
+	}
+	
+	/* Outros estilos existentes */
+	.afastamento-icone-valor {
+		margin-left: 10px;
+	}
+	.style-icon-background {
+		border-radius: 50%;
+		padding: 5px;
+		color: white;
+		margin-left: -55px;
+	}
+	.whatsapp-color {
+		background-color: green;
+	}
+	.linkedin-color {
+		color: rgb(10, 102, 194);
+	}
+	.github-color {
+		color: black;
+	}
+	.email-color {
+		color: rgb(243, 90, 90);
+	}
+	body.dark-mode .github-color {
+		color: #f1f1f1;
+	}
 </style>
+
+
 
 <script>
 	// Função para alternar o dark mode
