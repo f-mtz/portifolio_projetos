@@ -1,0 +1,292 @@
+/* <style> */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slide {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text-content {
+    width: 50%;
+    background-color: #1f1f23;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.green {
+    color: #00d25b;
+}
+
+.text-content p {
+    margin: 10px 0 30px;
+    color: #c4c4c4;
+}
+
+.text-content h2 {
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+}
+
+.image-content {
+    width: 50%;
+    background-image: linear-gradient(to left, #1f1f23 30%, rgba(31, 31, 35, 0) 100%), url('images/image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.stats {
+    position: absolute;
+    bottom: -30px;
+    background-color: #1f1f23;
+    color: #00d25b;
+    padding: 20px 40px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    gap: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.stats div {
+    color: #00d25b;
+}
+
+.image-content {
+    width: 50%;
+    background-image: linear-gradient(to left, #1f1f23 30%, rgba(31, 31, 35, 0) 100%), url('./images/image.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: visible;
+    /* ✅ permite exibir a parte de fora (números) */
+}
+
+.stats {
+    position: relative;
+    bottom: 0;
+    /* ✅ deixa visível dentro da imagem */
+    background-color: #1f1f23;
+    color: #00d25b;
+    padding: 20px 40px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    gap: 40px;
+    font-weight: bold;
+    text-align: center;
+    width: 70%;
+    /* ✅ ocupa toda a largura da imagem */
+    box-sizing: border-box;
+}
+
+
+
+.stats div {
+    color: #00d25b;
+    margin-top: 5px;
+    /* ✅ leve espaço entre texto e borda superior */
+}
+
+
+.stats span {
+    display: block;
+    font-size: 1.5em;
+}
+
+.stats p {
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.carousel-buttons {
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.counter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00d25b;
+    transition: all 0.3s ease;
+}
+
+.counter {
+    font-size: 3.2rem; /* text-5xl equivalente */
+    font-weight: 700; /* font-bold */
+    color: #00d25b;  /* text-accent */
+    margin-bottom: 0.5rem;
+  }
+
+.typewriter-container {
+    border-right: 2px solid #00d25b;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typewriter-container.done {
+    animation: none;
+    border-right: none;
+}
+/* </style> */
+
+.slide-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .slide-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .green {
+    color: #2ecc71;
+  }
+
+  
+  #typewriter-slide h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+#typewriter-slide h4 {
+    font-size: 1.5rem;
+    color: #faf4f4;
+}
+
+#typewriter-slide .green {
+    color: green;
+}
+
+/* Estilo do cursor piscante */
+#typewriter-slide:not(.done)::after {
+    content: '|';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.green {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+#typewriter-slide h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#typewriter-slide h4 {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 0.3em;
+}
+
+/* Estilo do cursor piscante */
+#typewriter-slide:not(.done)::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: #333;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Garante que todo o texto seja branco */
+#typewriter-slide {
+    color: white;
+}
+
+/* Estilo específico para o h3 */
+#typewriter-slide h3 {
+    font-size: 1.8em;
+    margin: 0.8em 0;
+    font-weight: bold;
+}
+
+/* Estilo para o span verde */
+#typewriter-slide .green {
+    color: #4CAF50; /* Verde */
+}
+
+/* Cursor piscante */
+#typewriter-slide:not(.done)::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: white;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
